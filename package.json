@@ -8,7 +8,8 @@
     "docs:dev": "vitepress dev",
     "docs:build": "vitepress build",
     "docs:preview": "vitepress preview",
-    "eslint": "eslint **/*.{vue,js,jsx,cjs,mjs,ts,tsx,cts,mts} --fix --debug"
+    "eslint": "eslint **/*.{vue,js,jsx,cjs,mjs,ts,tsx,cts,mts} --fix --debug",
+    "prettier": "prettier . --write"
   },
   "keywords": [],
   "author": "",
@@ -20,6 +21,7 @@
     "eslint-plugin-prettier": "^5.2.1",
     "eslint-plugin-vue": "^9.30.0",
     "globals": "^15.12.0",
+    "prettier": "3.3.3",
     "typescript-eslint": "^8.13.0",
     "vitepress": "^1.4.5"
   },
