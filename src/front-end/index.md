@@ -1,1 +1,1 @@
-前端页面 [点击到摄影页](../photography/index.md)
+[前端项目工程规范](./project-format/index.md)
