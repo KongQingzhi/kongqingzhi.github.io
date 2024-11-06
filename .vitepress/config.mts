@@ -29,6 +29,9 @@ export default defineConfig({
     ],
     logo: '/logo.svg',
     siteTitle: '孔庆志的博客',
+    search: {
+      provider: 'local',
+    },
   },
   // 指定根目录
   srcDir: './src',
