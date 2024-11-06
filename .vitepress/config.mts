@@ -25,6 +25,7 @@ export default defineConfig({
     socialLinks: [
       { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
     ],
+    logo: '/logo.svg',
   },
   // 指定根目录
   srcDir: './src',
