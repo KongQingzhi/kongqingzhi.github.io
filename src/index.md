@@ -1,11 +1,10 @@
 ---
-# https://vitepress.dev/reference/default-theme-home-page
 layout: home
 
 hero:
-  name: "KongQingzhi"
-  text: "KongQingzhi blog"
-  tagline: My great project tagline
+  name: '杳杳寒山道，落落冷涧滨'
+  text: '——初级前端的成长之路'
+  tagline: Far-reaching paths of Cold Mountain,lonely banks by cold streams.
   actions:
     - theme: brand
       text: Markdown Examples
@@ -22,4 +21,3 @@ features:
   - title: Feature C
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
-
