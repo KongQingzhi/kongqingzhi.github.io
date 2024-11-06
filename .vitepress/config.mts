@@ -1,4 +1,4 @@
-import { defineConfig } from 'vitepress'
+import { defineConfig } from 'vitepress';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -19,14 +19,15 @@ export default defineConfig({
         text: 'Examples',
         items: [
           { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
-        ]
-      }
+          { text: 'Runtime API Examples', link: '/api-examples' },
+        ],
+      },
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/vuejs/vitepress' },
     ],
+
     logo: '/logo.svg',
     siteTitle: '孔庆志的博客',
     search: {
@@ -36,16 +37,20 @@ export default defineConfig({
   // 指定根目录
   srcDir: './src',
   // 不含有.html的路由
-  cleanUrls:true,
+  cleanUrls: true,
   // 路由重写
-  rewrites:{
-    'about/index.md':'about/a.md'
+  rewrites: {
+    'about/index.md': 'about/a.md',
   },
   markdown: {
     lineNumbers: true,
     image: {
       // 默认禁用图片懒加载
-      lazyLoading: true
-    }
-  }
-})
+      lazyLoading: true,
+    },
+  },
+
+  vite: {
+    // Vite 配置选项
+  },
+});
