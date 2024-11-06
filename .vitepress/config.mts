@@ -26,6 +26,7 @@ export default defineConfig({
       { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
     ],
     logo: '/logo.svg',
+    siteTitle: '孔庆志的博客',
   },
   // 指定根目录
   srcDir: './src',
