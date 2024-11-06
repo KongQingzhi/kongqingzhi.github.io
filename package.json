@@ -10,7 +10,8 @@
     "docs:preview": "vitepress preview",
     "eslint": "eslint **/*.{vue,js,jsx,cjs,mjs,ts,tsx,cts,mts} --fix --debug",
     "prettier": "prettier . --write",
-    "stylelint": "stylelint **/*.{vue,css,scss,sass,less,stylus} --fix"
+    "stylelint": "stylelint **/*.{vue,css,scss,sass,less,stylus} --fix",
+    "prepare": "husky"
   },
   "keywords": [],
   "author": "",
@@ -22,6 +23,7 @@
     "eslint-plugin-prettier": "^5.2.1",
     "eslint-plugin-vue": "^9.30.0",
     "globals": "^15.12.0",
+    "husky": "^9.1.6",
     "lint-staged": "^15.2.10",
     "postcss-html": "^1.7.0",
     "prettier": "3.3.3",
