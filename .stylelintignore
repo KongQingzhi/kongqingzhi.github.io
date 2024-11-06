@@ -1,0 +1,8 @@
+*.js
+*.ts
+*.cjs
+*.png
+*.json
+*.md
+*.yaml
+dist
