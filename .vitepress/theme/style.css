@@ -110,3 +110,7 @@
     --vp-home-hero-image-filter: blur(68px);
   }
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
