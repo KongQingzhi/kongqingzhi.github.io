@@ -9,7 +9,7 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     // 站点标题和图标
     siteTitle: '孔庆志的博客',
-    logo: '/logo.svg',
+    logo: '/logo.png',
     // 导航链接
     nav: [
       { text: '首页', link: '/' },
