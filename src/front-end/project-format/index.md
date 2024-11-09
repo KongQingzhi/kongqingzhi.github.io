@@ -656,7 +656,8 @@ npm install stylelint-config-standard-scss --save-dev
 
 - 扩展了 stylelint-config-standard 共享配置并为 Vue 配置其规则
 - 扩展共享 stylelint-config-recommended-vue 配置
-  ::: code-group
+
+::: code-group
 
 ```bash [npm]
 npm install postcss-html stylelint-config-standard-vue --save-dev
