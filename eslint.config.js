@@ -38,7 +38,7 @@ export default [
   eslintPluginPrettierRecommended,
 
   // 配置忽略项，指定在某些操作或任务中不应被处理的目录或文件
-  { ignores: ['dist/**', 'node_modules/**'] },
+  { ignores: ['dist/**', 'node_modules/**', '**/iconfont.js'] },
 
   // 定义文件匹配模式，仅对指定的文件类型应用以下规则
   {
