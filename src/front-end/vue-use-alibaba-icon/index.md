@@ -144,7 +144,7 @@ import '@/assets/iconfont/iconfont.css';
 在资源目录下新增一个 `icofont` 的文件夹，将 `iconfont.js` 文件复制到该文件夹下。 在 `index.html` 文件中引入 Iconfont 的 JS 文件：
 
 ```html
-<script src="./iconfont.js"></script>
+<script type="module" src="/src/assets/iconfont/iconfont.js"></script>
 ```
 
 **引入在线资源：**：
