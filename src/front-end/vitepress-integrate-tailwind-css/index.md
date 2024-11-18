@@ -111,7 +111,7 @@ export default {
   Hello world!
 </h1>
 
-> [!warning]
+> [!WARNING]
 > 配置了 `stylelint` 后，在 `.vitepress/theme/styles.css` 文件中添加 `@tailwind base;` 会导致 `stylelint` 报错。
 >
 > :x: Unexpected unknown at-rule "@tailwind" (scss/at-rule-no-unknown)Stylelintscss/at-rule-no-unknown

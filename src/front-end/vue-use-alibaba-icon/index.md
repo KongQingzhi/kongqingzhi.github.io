@@ -199,7 +199,7 @@ import '@/assets/iconfont/iconfont.css';
   <use xlink:href="#icon-aixin"></use>
 </svg>
 
-> [!tip]
+> [!TIP]
 > 由于生成的 svg 默认是有颜色填充的，需要在下载之前对图标进行去色处理。
 >
 > 点击批量操作按钮，全选图标，然后点击去色按钮，即可全部去色。
