@@ -160,6 +160,13 @@ import '@/assets/iconfont/iconfont.css';
 <script src="//at.alicdn.com/t/c/font_4740592_6l8fv4yxg16.js"></script>
 ```
 
+> [!WARNING]
+> 引入本地资源时如果控制台报错：
+>
+> :x: Uncaught SyntaxError: Cannot use import statement outside a module (at iconfont.js?t=xxxx)
+>
+> 应该检查script标签中是否添加 `type="module"`
+
 2. 在 `style.css` 加入通用 CSS 代码 （引入一次就行）：
 
 ::: code-group
