@@ -9,7 +9,7 @@
 </template>
 
 <script setup lang="ts">
-import { defineOptions } from 'vue';
+import { defineOptions, onMounted } from 'vue';
 defineOptions({ name: 'IconComponent' });
 defineProps({
   color: {
@@ -23,4 +23,6 @@ defineProps({
     type: String,
   },
 });
+
+onMounted(() => import('../../../../.vitepress/theme/iconfont.js'));
 </script>
