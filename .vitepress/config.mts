@@ -61,7 +61,7 @@ export default defineConfig({
     returnToTopLabel: '返回顶部',
   },
   // 指定根目录
-  srcDir: './src',
+  srcDir: './src/pages',
   // 不含有.html的路由
   cleanUrls: true,
   // 路由重写
