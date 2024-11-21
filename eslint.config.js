@@ -55,7 +55,9 @@ export default [
   // 对Vue文件进行特殊配置，使用TypeScript解析器
   {
     files: ['**/*.vue'],
-    languageOptions: { parserOptions: { parser: tseslint.parser } },
-    parser: tseslint.parser,
+    languageOptions: {
+      parser: 'vue-eslint-parser',
+      parserOptions: { parser: tseslint.parser },
+    },
   },
 ];
