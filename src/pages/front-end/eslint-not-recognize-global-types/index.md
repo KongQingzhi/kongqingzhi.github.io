@@ -99,7 +99,7 @@ export default [
 
 将`types` 目录添加到 `include` 中，这样就可以正确识别全局类型了。本以为解决了问题，但实际测试后，问题并没有得到解决。依然存在 `no-undef` 错误。
 
-在尝试解决这个问题的过程中，我开始怀疑可能是 `eslint` 的配置出现了问题。因此，我重新检查了我的 `eslint` 配置文件，确认了 `typescript-eslint` 插件已经正确安装并且配置无误。然而，即使这样，问题依然没有得到解决。进一步分析后，我发现配置文件中关于 `.vue` 文件的解析配置是在 `languageOptions.parserOptions.parser` 下，使用的解析器名称为 `tseslint.parser`。但是，我在配置文件中并没有添加 `tseslint.parser` 的具体配置。于是，我添加了 `tseslint.parser` 的配置。经过这一调整，问题终于得到了解决。
+在尝试解决这个问题的过程中，我开始怀疑可能是 `eslint` 的配置出现了问题。因此，我重新检查了我的 `eslint` 配置文件，确认了 `typescript-eslint` 插件已经正确安装并且配置无误。然而，即使这样，问题依然没有得到解决。进一步分析后，我发现配置文件中关于 `.vue` 文件的解析配置是在 `languageOptions.parserOptions.parser` 下，使用的解析器名称为 `tseslint.parser`。但是，我在配置文件中并没有添加解析器的具体配置。于是，我添加了 `parser: tseslint.parser` 的配置。经过这一调整，问题终于得到了解决。
 
 ## 解决方法
 
