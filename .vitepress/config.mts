@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress';
+import sidebar from './sidebar';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -17,16 +18,8 @@ export default defineConfig({
       { text: '摄影', link: '/photography/', activeMatch: '/photography/' },
       { text: '关于', link: '/about/', activeMatch: '/about/' },
     ],
-
-    sidebar: [
-      {
-        text: 'Examples',
-        items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' },
-        ],
-      },
-    ],
+    // 侧边栏
+    sidebar,
     // 社交链接
     socialLinks: [{ icon: 'github', link: 'https://github.com/KongQingzhi' }],
 
