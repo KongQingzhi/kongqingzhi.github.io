@@ -56,5 +56,6 @@ export default [
   {
     files: ['**/*.vue'],
     languageOptions: { parserOptions: { parser: tseslint.parser } },
+    parser: tseslint.parser,
   },
 ];

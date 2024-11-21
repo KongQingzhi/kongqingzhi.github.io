@@ -1,0 +1,4 @@
+{
+  // include包含的形式命名的文件可以被全局访问
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue", "types/**/*.d.ts"]
+}
