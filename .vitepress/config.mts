@@ -13,9 +13,9 @@ export default defineConfig({
     // 导航链接
     nav: [
       { text: '首页', link: '/' },
-      { text: '前端', link: '/front-end' },
-      { text: '摄影', link: '/photography' },
-      { text: '关于', link: '/about' },
+      { text: '前端', link: '/front-end/', activeMatch: '/front-end/' },
+      { text: '摄影', link: '/photography/', activeMatch: '/photography/' },
+      { text: '关于', link: '/about/', activeMatch: '/about/' },
     ],
 
     sidebar: [
