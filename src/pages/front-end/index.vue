@@ -19,5 +19,9 @@ const list = [
     path: '/front-end/vue-use-alibaba-icon/index',
     title: '在 Vue 中使用阿里巴巴图标库',
   },
+  {
+    path: '/front-end/eslint-not-recognize-global-types/index',
+    title: '解决 eslint 无法识别全局类型的问题',
+  },
 ];
 </script>
