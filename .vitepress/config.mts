@@ -26,6 +26,7 @@ export default defineConfig({
           { text: '实践', link: '/front-end/practice/' },
         ],
       },
+      { text: '组件', link: '/components/', activeMatch: '/components/' },
       { text: '摄影', link: '/photography/', activeMatch: '/photography/' },
       { text: '关于', link: '/about/', activeMatch: '/about/' },
     ],
