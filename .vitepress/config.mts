@@ -14,7 +14,18 @@ export default defineConfig({
     // 导航链接
     nav: [
       { text: '首页', link: '/' },
-      { text: '前端', link: '/front-end/', activeMatch: '/front-end/' },
+      {
+        text: '前端',
+        activeMatch: '/front-end/',
+        items: [
+          { text: 'HTML & CSS', link: '/front-end/html&css/' },
+          { text: 'JS & TS', link: '/front-end/js&ts/' },
+          { text: 'Vue', link: '/front-end/vue/' },
+          { text: '微信小程序', link: '/front-end/wechat-miniprogram/' },
+          { text: '工具', link: '/front-end/tools/' },
+          { text: '实践', link: '/front-end/practice/' },
+        ],
+      },
       { text: '摄影', link: '/photography/', activeMatch: '/photography/' },
       { text: '关于', link: '/about/', activeMatch: '/about/' },
     ],
