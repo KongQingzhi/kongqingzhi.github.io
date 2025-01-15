@@ -13,5 +13,9 @@ const list = [
     path: 'html-base',
     title: 'HTML 基础',
   },
+  {
+    path: 'three-column-layout',
+    title: '三栏布局',
+  },
 ].map((item) => ({ ...item, path: `/front-end/html&css/${item.path}` }));
 </script>

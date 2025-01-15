@@ -27,8 +27,12 @@ export default {
       text: 'HTML&CSS',
       items: [
         {
-          link: '/front-end/html&css/html-base',
+          link: '/front-end/html&css/html-base/',
           text: 'HTML 基础',
+        },
+        {
+          link: '/front-end/html&css/three-column-layout/',
+          text: '三栏布局',
         },
       ],
     },
