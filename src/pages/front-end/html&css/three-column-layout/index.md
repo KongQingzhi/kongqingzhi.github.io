@@ -489,6 +489,8 @@ import DoubleWing from './DoubleWing.vue'
 - 使用相对定位复杂
 - 宽度限制严格
 - 维护成本高
+- 最小宽度限制
+  需要设置容器最小宽度，防止内容挤压变形，min-width = 左侧栏宽度 + 右侧栏宽度
 
 ## 双飞翼布局（Double Wing Layout）
 
