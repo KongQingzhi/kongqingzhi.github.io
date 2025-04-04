@@ -1,8 +1,6 @@
 {
   "name": "vue-blog",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "孔庆志的个人博客",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "docs:dev": "vitepress dev",
@@ -11,7 +9,10 @@
     "eslint": "eslint **/*.{vue,js,jsx,cjs,mjs,ts,tsx,cts,mts} --fix --debug",
     "prettier": "prettier . --write",
     "stylelint": "stylelint **/*.{vue,css,scss,sass,less,stylus} --fix",
-    "prepare": "husky"
+    "prepare": "husky",
+    "dev": "vite",
+    "build": "vue-tsc -b && vite build",
+    "preview": "vite preview"
   },
   "keywords": [],
   "author": "",
@@ -20,6 +21,9 @@
     "@commitlint/cli": "^19.5.0",
     "@commitlint/config-conventional": "^19.5.0",
     "@eslint/js": "^9.14.0",
+    "@headlessui/vue": "^1.7.23",
+    "@types/node": "^22.13.16",
+    "@vitejs/plugin-vue": "^5.1.4",
     "autoprefixer": "^10.4.20",
     "eslint": "^9.14.0",
     "eslint-config-prettier": "^9.1.0",
@@ -31,19 +35,24 @@
     "postcss": "^8.4.47",
     "postcss-html": "^1.7.0",
     "prettier": "3.3.3",
+    "sass": "^1.86.3",
     "stylelint": "^16.10.0",
     "stylelint-config-standard": "^36.0.1",
     "stylelint-config-standard-scss": "^13.1.0",
     "stylelint-config-standard-vue": "^1.0.0",
     "stylelint-scss": "^6.8.1",
     "tailwindcss": "^3.4.14",
+    "typescript": "^5.6.3",
     "typescript-eslint": "^8.13.0",
-    "vitepress": "^1.4.5",
-    "vue-eslint-parser": "^9.4.3"
+    "vite": "^5.4.10",
+    "vue-eslint-parser": "^9.4.3",
+    "vue-tsc": "^2.1.6"
   },
   "type": "module",
   "dependencies": {
     "@types/vue": "^2.0.0",
-    "vue": "^3.5.12"
-  }
+    "vue": "^3.5.12",
+    "vue-router": "^4.5.0"
+  },
+  "version": "1.0.0"
 }

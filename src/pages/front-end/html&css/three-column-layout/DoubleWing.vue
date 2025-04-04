@@ -28,7 +28,6 @@
   float: left;
   width: 100%;
   overflow: hidden;
-
 }
 
 .left {
