@@ -14,12 +14,13 @@
 </template>
 
 <script setup lang="ts">
-import { describe } from 'node:test';
 import ProjectItem from './ProjectItem.vue';
 import chrome from '@/assets/index/chrome.png';
 import huigou from '@/assets/index/huigou.png';
 import passion from '@/assets/index/passion.png';
 import taro from '@/assets/index/taro.png';
+
+defineOptions({ name: 'ProjectComponent' });
 
 const projectList = [
   {

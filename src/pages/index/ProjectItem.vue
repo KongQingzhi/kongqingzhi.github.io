@@ -12,7 +12,7 @@
         <span class="text-sm text-gray-400">{{ item.date }}</span>
       </h4>
 
-      <p class="text- text-gray-600 h-12 ">{{ item.describe }}</p>
+      <p class="text-gray-600 h-12">{{ item.describe }}</p>
     </div>
 
     <div class="flex justify-between items-center">

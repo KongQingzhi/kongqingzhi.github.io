@@ -8,6 +8,10 @@
   <footer class="footer">footer</footer>
 </template>
 
+<script setup lang="ts">
+defineOptions({ name: 'FloatComponent' });
+</script>
+
 <style scoped>
 .header,
 .left,

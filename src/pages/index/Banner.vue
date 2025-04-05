@@ -26,6 +26,7 @@
       </p>
       <div
         class="relative cursor-pointer hover:shadow-[2px_2px_5px_0px_rgba(52,208,178,1)] shadow-[6px_6px_0px_0px_rgba(52,208,178,1)] group w-44 h-14 transition-all duration-300 overflow-hidden bg-white border-4 border-danger"
+        @click="handleGo"
       >
         <div
           class="absolute -top-10 -left-8 w-64 h-4 z-0 bg-primary -rotate-12 transition-all duration-300 group-hover:h-40"
@@ -40,9 +41,14 @@
 </template>
 
 <script lang="ts" setup>
-import { useRouter, useRoute } from 'vue-router';
+import { useRouter } from 'vue-router';
 import banner from '@/assets/index/banner.svg';
 
+defineOptions({ name: 'BannerComponent' });
+
 const router = useRouter();
-const route = useRoute();
+
+const handleGo = () => {
+  router.push({ name: 'about' });
+};
 </script>

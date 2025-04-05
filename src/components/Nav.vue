@@ -3,7 +3,9 @@
     <div class="mx-auto px-10 container flex-wrap py-3 flex justify-between">
       <h1 class="size-10 cursor-pointer relative" @click="handleClickLogo">
         <img :src="Logo" alt="log" />
-        <div class="absolute leading-5 bottom-0 text-lg left-7 font-bold text-white">
+        <div
+          class="absolute leading-5 bottom-0 text-lg left-7 font-bold text-white"
+        >
           <i class="text-info">a</i><i>ssion</i>
         </div>
       </h1>
@@ -24,6 +26,8 @@
 <script setup lang="ts">
 import Logo from '@/assets/logo.png';
 import { useRoute, useRouter } from 'vue-router';
+
+defineOptions({ name: 'NavComponent' });
 
 const route = useRoute();
 const router = useRouter();

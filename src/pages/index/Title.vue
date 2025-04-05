@@ -12,12 +12,14 @@
     </h1>
 
     <div class="button">
-      <div class="box" v-for="items in button">{{ items }}</div>
+      <div class="box" v-for="items in button" :key="items">{{ items }}</div>
     </div>
   </div>
 </template>
 
 <script lang="ts" setup>
+defineOptions({ name: 'TitleComponent' });
+
 const title: string[] = ['研究生活细节', '分享美好时光'];
 const button: string = 'PASSIONATE---火热';
 function toBottom(): void {
