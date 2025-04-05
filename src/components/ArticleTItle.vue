@@ -32,7 +32,7 @@
 </template>
 
 <script setup lang="ts">
-import { useRouter } from 'vitepress';
+import { useRouter } from 'vue-router';
 
 interface Article {
   path: string;
@@ -44,6 +44,6 @@ defineProps<{ article: Article }>();
 const router = useRouter();
 
 const navigate = async (path: string) => {
-  await router.go(path);
+  await router.push({ path });
 };
 </script>
