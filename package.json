@@ -11,7 +11,7 @@
     "stylelint": "stylelint **/*.{vue,css,scss,sass,less,stylus} --fix",
     "prepare": "husky",
     "dev": "vite",
-    "build": "vue-tsc -b && vite build",
+    "build": "vite build",
     "preview": "vite preview"
   },
   "keywords": [],
