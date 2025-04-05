@@ -8,6 +8,7 @@ import tseslint from 'typescript-eslint';
 import pluginVue from 'eslint-plugin-vue';
 // 导入eslint配置项以配合Prettier使用
 import eslintConfigPrettier from 'eslint-config-prettier';
+import vueEslintParser from 'vue-eslint-parser';
 
 /**
  * 导入prettier的ESLint推荐配置
@@ -56,7 +57,7 @@ export default [
   {
     files: ['**/*.vue'],
     languageOptions: {
-      parser: 'vue-eslint-parser',
+      parser: vueEslintParser,
       parserOptions: { parser: tseslint.parser },
     },
   },
