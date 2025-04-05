@@ -34,6 +34,11 @@
 <script setup lang="ts">
 import { useRouter } from 'vitepress';
 
+interface Article {
+  path: string;
+  title: string;
+}
+
 defineProps<{ article: Article }>();
 
 const router = useRouter();
