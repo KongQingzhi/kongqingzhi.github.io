@@ -1,6 +1,6 @@
 <template>
   <section>
-    <ScrollShell />
+    <!-- <ScrollShell /> -->
     <GalleryPart
       v-for="item in galleryParts"
       :key="item.title"
@@ -11,7 +11,7 @@
 </template>
 
 <script setup lang="ts">
-import ScrollShell from './ScrollShell.vue';
+// import ScrollShell from './ScrollShell.vue';
 import GalleryPart from './GalleryPart.vue';
 
 defineOptions({ name: 'GalleryPage' });
@@ -105,7 +105,6 @@ const galleryParts = [
     imageList: [
       new URL('./DSC_2159.JPG', import.meta.url).href,
       new URL('./DSC_2162.JPG', import.meta.url).href,
-      '',
     ],
   },
 ];
