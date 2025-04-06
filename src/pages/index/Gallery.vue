@@ -92,7 +92,7 @@ const swiperList = [
     describe: '乱点碎红山杏发，平铺新绿水蘋生 — 白居易《南湖早春》',
     date: '2025-03-13',
     title: '芳华',
-    url: new URL('../gallery/DSC_1468.JPG', import.meta.url).href,
+    url: new URL('../gallery/DSC_1468.jpg', import.meta.url).href,
   },
   {
     describe: '晓声隆隆催转日，暮声隆隆催月出 — 李贺《官街鼓》',
@@ -104,13 +104,13 @@ const swiperList = [
     describe: '海上涛头一线来，楼前指顾雪成堆 — 苏轼《望海楼晚景》',
     date: '2025-03-13',
     title: '潮声录',
-    url: new URL('../gallery/DSC_2201.JPG', import.meta.url).href,
+    url: new URL('../gallery/DSC_2201.jpg', import.meta.url).href,
   },
   {
     describe: '长风破浪会有时，直挂云帆济沧海 — 李白《行路难》',
     date: '2025-03-13',
     title: '云帆志',
-    url: new URL('../gallery/DSC_2209.JPG', import.meta.url).href,
+    url: new URL('../gallery/DSC_2209.jpg', import.meta.url).href,
   },
   {
     describe: '万物静观皆自得，四时佳兴与人同 — 程颢《秋日偶成》',
@@ -122,7 +122,7 @@ const swiperList = [
     describe: '乱点碎红山杏发，平铺新绿水蘋生 — 白居易《南湖早春》',
     date: '2025-03-13',
     title: '芳华',
-    url: new URL('../gallery/DSC_1468.JPG', import.meta.url).href,
+    url: new URL('../gallery/DSC_1468.jpg', import.meta.url).href,
   },
 ];
 const router = useRouter();
