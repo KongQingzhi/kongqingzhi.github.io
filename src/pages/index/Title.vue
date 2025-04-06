@@ -1,6 +1,6 @@
 <template>
   <div id="title-box">
-    <h1 class="title">
+    <div class="title">
       <span class="title-con">{{ title[0] }}</span>
       <div class="scrolldown" @click="toBottom">
         <div class="chevrons">
@@ -9,7 +9,7 @@
         </div>
       </div>
       <span class="title-con">{{ title[1] }}</span>
-    </h1>
+    </div>
 
     <div class="button">
       <div class="box" v-for="items in button" :key="items">{{ items }}</div>
@@ -20,7 +20,7 @@
 <script lang="ts" setup>
 defineOptions({ name: 'TitleComponent' });
 
-const title: string[] = ['研究生活细节', '分享美好时光'];
+const title: string[] = ['生命不息', '进步不止'];
 const button: string = 'PASSIONATE---火热';
 function toBottom(): void {
   document.documentElement.scrollTop = 940;
@@ -140,7 +140,7 @@ function toBottom(): void {
     overflow: hidden;
 
     .box {
-      width: 6rem;
+      flex: 1;
       height: 6.25rem;
       display: flex;
       justify-content: center;
