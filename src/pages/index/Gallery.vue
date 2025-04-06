@@ -14,14 +14,13 @@
           <div
             v-for="item in swiperList"
             :key="item.title"
-            class="w-[1456px] h-[650px]"
-          >
-            <img :src="item.url" alt="" class="w-full h-full object-cover" />
-          </div>
+            class="w-[1456px] h-[650px] bg-cover"
+            :style="{ backgroundImage: `url(${item.url})` }"
+          ></div>
         </div>
 
         <div
-          class="w-[400px] flex justify-center items-center h-[80vh] absolute right-0 p-10 backdrop-blur-md"
+          class="w-[400px] flex justify-center items-center h-full absolute right-0 p-10 backdrop-blur-md"
         >
           <div>
             <h3 class="text-8xl h-[200px] tracking-wider font-bold text-white">
