@@ -1,9 +1,13 @@
 {
   "compilerOptions": {
+    "module": "esnext", // 修改为支持 import.meta 的值
+    "target": "esnext",
+    "esModuleInterop": true,
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
-    }
+    },
+    "moduleResolution": "node"
   },
   // include包含的形式命名的文件可以被全局访问
   "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue", "types/**/*.d.ts"]

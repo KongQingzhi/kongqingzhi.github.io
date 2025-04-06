@@ -105,6 +105,7 @@ const resizeObserver = new ResizeObserver(() => {
 
 onMounted(() => {
   if (containerRef.value) {
+    calcColWidth();
     resizeObserver.observe(containerRef.value);
   }
 });
