@@ -2,7 +2,7 @@
   <div class="shell h-[100vh] overflow-scroll" style="perspective: 3px">
     <div
       class="image bg-cover h-[100vh] -z-[1]"
-      style="background-image: url('/src/pages/gallery/DSC_2209.jpg')"
+      style="background-image: url('./DSC_2209.jpg')"
     />
     <div class="heading -z-[1] text-white text-[30px]">
       <h1>When you are confused</h1>
@@ -13,7 +13,7 @@
 
     <div
       class="image bg-cover h-[100vh] -z-[1]"
-      style="background-image: url('/src/pages/gallery/DSC_2200.jpg')"
+      style="background-image: url('./DSC_2200.jpg')"
     />
     <div class="heading -z-[1] text-white text-[30px]">
       <h1>When you're down</h1>
@@ -24,7 +24,7 @@
 
     <div
       class="image bg-cover h-[100vh] -z-[1]"
-      style="background-image: url('/src/pages/gallery/DSC_2182.jpg')"
+      style="background-image: url('./DSC_2182.jpg')"
     />
     <div class="heading -z-[1] text-white text-[30px]">
       <h1>When prople leave you</h1>
@@ -35,7 +35,7 @@
 
     <div
       class="image bg-cover h-[100vh] -z-[1]"
-      style="background-image: url('/src/pages/gallery/DSC_0773-3.jpg')"
+      style="background-image: url('./DSC_0773-3.jpg')"
     />
     <div class="heading -z-[1] text-white text-[30px]">
       <h1>Come on,stranger.</h1>
