@@ -14,9 +14,10 @@
           <div
             v-for="item in swiperList"
             :key="item.title"
-            class="w-[1456px] h-[650px] bg-cover"
-            :style="{ backgroundImage: `url(${item.url})` }"
-          ></div>
+            class="w-[1456px] h-[650px]"
+          >
+            <img :src="item.url" alt="" class="object-cover" />
+          </div>
         </div>
 
         <div
