@@ -1,5 +1,5 @@
 <template>
-  <div ref="containerRef" class="">
+  <div ref="containerRef">
     <PageTitle :title="title" :aside="describe" />
 
     <div
