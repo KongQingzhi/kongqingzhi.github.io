@@ -2,7 +2,7 @@
   <section class="py-10">
     <h2 class="leading-6">
       <span class="text-3xl font-bold tracking-wide">摄影图库</span>
-      <span class="text-gray-600 ml-4 align-bottom">记录瞬间的美好。</span>
+      <span class="text-gray-600 ml-4 align-bottom">让瞬间成为永恒。</span>
     </h2>
     <div class="mt-8">
       <div class="relative h-[650px] overflow-hidden rounded-lg border-2">
@@ -63,7 +63,7 @@
     <div>
       <div
         @click="handleClickMore"
-        class="bg-primary w-40 cursor-pointer text-center my-10 rounded-full px-3 text-white py-2 mx-auto"
+        class="bg-primary w-40 cursor-pointer text-center mt-10 rounded-full px-3 text-white py-2 mx-auto"
       >
         更多
       </div>
