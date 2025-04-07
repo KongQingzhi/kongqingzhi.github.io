@@ -3,6 +3,7 @@
     <Banner />
     <Title />
     <Project />
+    <Article />
     <Gallery />
   </div>
 </template>
@@ -12,6 +13,7 @@ import Banner from './Banner.vue';
 import Title from './Title.vue';
 import Project from './Project.vue';
 import Gallery from './Gallery.vue';
+import Article from './Article.vue';
 
 defineOptions({ name: 'HomePage' });
 </script>
