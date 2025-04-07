@@ -27,7 +27,7 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHistory('./'),
+  history: createWebHistory('/'),
   routes,
   scrollBehavior() {
     return { top: 0 };
