@@ -1,8 +1,8 @@
 <template>
-  <div class="w-96 space-y-4 bg-white rounded-xl p-4">
+  <div class="lg:w-96 space-y-4 bg-white rounded-xl p-4">
     <img
       :src="item.img"
-      class="rounded-xl object-cover w-full h-56 overflow-hidden"
+      class="rounded-xl object-cover w-full md:h-56 overflow-hidden"
       alt=""
     />
     <div class="space-y-2">
@@ -22,7 +22,7 @@
         {{ item.type }}
       </div>
       <button
-        class="rounded-lg bg-primary text-sm text-white px-20 py-2"
+        class="rounded-lg bg-primary text-sm text-white px-8 lg:px-20 py-2"
         @click="handleGo(item.url)"
       >
         去看看

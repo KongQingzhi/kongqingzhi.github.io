@@ -7,7 +7,9 @@
       >
     </h2>
 
-    <div class="mt-8 grid gap-8 grid-cols-3">
+    <div
+      class="mt-8 grid place-items-center gap-8 md:grid-cols-2 xl:grid-cols-3"
+    >
       <ProjectItem v-for="item in projectList" :key="item.name" :item="item" />
     </div>
   </section>

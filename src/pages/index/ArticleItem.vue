@@ -1,14 +1,16 @@
 <template>
   <div
-    class="bg-white cursor-pointer flex justify-between items-center gap-4 flex-wrap p-6 rounded-lg"
+    class="bg-white cursor-pointer xl:flex justify-between items-center gap-4 flex-wrap p-6 rounded-lg"
     @click="handleGo"
   >
-    <div class="rounded-lg w-72 h-[192px]">
-      <img :src="image" alt="" class="h-full object-cover" />
-    </div>
+    <img
+      :src="image"
+      class="rounded-xl object-cover w-full h-[192px] overflow-hidden"
+      alt=""
+    />
     <div class="flex-1">
       <h3
-        class="text-2xl break-words text-gray-800 text-ellipsis line-clamp-1 font-bold mb-2"
+        class="text-2xl mt-4 lg:mt-0 break-words text-gray-800 text-ellipsis line-clamp-1 font-bold mb-2"
       >
         {{ title }}
       </h3>
