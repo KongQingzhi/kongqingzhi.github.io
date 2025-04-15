@@ -19,6 +19,10 @@ import chrome from '@/assets/index/chrome.png';
 import huigou from '@/assets/index/huigou.png';
 import passion from '@/assets/index/passion.png';
 import taro from '@/assets/index/taro.png';
+import BjQr from '@/assets/index/bj_qr.png';
+import PtQr from '@/assets/index/pt_qr.jpg';
+import BJ from '@/assets/index/bj.png';
+import PT from '@/assets/index/pt.png';
 
 defineOptions({ name: 'ProjectComponent' });
 
@@ -34,18 +38,18 @@ const projectList = [
   {
     date: '2023-03-16',
     describe: '校园跑腿服务平台，提供校园内的跑腿服务。',
-    img: '',
+    img: PT,
     name: '叮叮校园',
     type: '微信小程序',
-    url: 'https://www.yiwutora.com',
+    url: PtQr,
   },
   {
     date: '2023-03-16',
     describe: '校园快递代取平台，提供高校与驿站的快递代取服务。',
-    img: '',
+    img: BJ,
     name: '惠购校园镖局',
     type: '微信小程序',
-    url: 'https://www.yiwutora.com',
+    url: BjQr,
   },
   {
     date: '2023-03-16',
