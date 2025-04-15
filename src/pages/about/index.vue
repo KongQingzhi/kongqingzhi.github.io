@@ -39,7 +39,7 @@
         <li>Tel: 15653754746</li>
         <li>WeChat: 15653754746</li>
         <li>QQ: 1428390162</li>
-        <li>Email: 1428390162@qq.com</li>
+        <li>Email: kongqingzhi31@163.com</li>
       </ul>
     </div>
   </div>

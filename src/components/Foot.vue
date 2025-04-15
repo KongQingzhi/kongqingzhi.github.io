@@ -6,7 +6,7 @@
           <h3 class="mb-2 text-base font-bold">联系我</h3>
           <p>电话: 156 5375 4746</p>
           <p>微信: 156 5375 4746</p>
-          <p>邮件: 1428390162@qq.com</p>
+          <p>邮件: kongqingzhi31@163.com</p>
         </div>
 
         <div class="mt-4">
