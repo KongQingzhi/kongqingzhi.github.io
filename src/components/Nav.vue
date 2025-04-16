@@ -1,6 +1,8 @@
 <template>
   <div class="bg-primary shadow-md">
-    <div class="mx-auto px-10 container flex-wrap py-3 flex justify-between">
+    <div
+      class="mx-auto px-4 sm:px-10 container flex-wrap py-3 flex justify-between"
+    >
       <h1 class="size-10 cursor-pointer relative" @click="handleClickLogo">
         <img :src="Logo" alt="log" />
         <div
@@ -9,7 +11,7 @@
           <i class="text-info">a</i><i>ssion</i>
         </div>
       </h1>
-      <ul class="flex text-base space-x-10">
+      <ul class="flex text-base space-x-4 sm:space-x-10">
         <li
           v-for="{ name, text } in menuList"
           :key="name"
