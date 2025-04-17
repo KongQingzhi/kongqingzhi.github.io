@@ -20,6 +20,7 @@
       >
         <div v-for="image in col" :key="image.url">
           <img
+            v-show-scroll-up
             :src="image.url"
             alt=""
             :weight="columnWidth"
