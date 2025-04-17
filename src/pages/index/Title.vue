@@ -1,241 +1,124 @@
 <template>
-  <div id="title-box">
-    <div class="title">
-      <span class="title-con">{{ title[0] }}</span>
-      <div class="scrolldown" @click="toBottom">
+  <div class="mb-10">
+    <div
+      class="flex h-40 tracking-[8px] lg:tracking-[14px] text-2xl sm:text-[40px] xl:text-[56px] text-[#020252] font-black justify-around items-center"
+    >
+      <p>生命不息</p>
+      <div ref="scrollDownRef" class="scroll-down">
         <div class="chevrons">
-          <div class="chevrondown"></div>
-          <div class="chevrondown"></div>
+          <div class="chevron-down"></div>
+          <div class="chevron-down"></div>
         </div>
       </div>
-      <span class="title-con">{{ title[1] }}</span>
+      <p>进步不止</p>
     </div>
 
-    <div class="button">
-      <div class="box" v-for="items in button" :key="items">{{ items }}</div>
-    </div>
+    <div id="top" class="next h-4 bg-primary"></div>
   </div>
 </template>
 
 <script lang="ts" setup>
+import { ref, onMounted } from 'vue';
+
+const scrollDownRef = ref<HTMLElement>(null);
+
 defineOptions({ name: 'TitleComponent' });
 
-const title: string[] = ['生命不息', '进步不止'];
-const button: string = 'PASSIONATE---火热';
-function toBottom(): void {
-  document.documentElement.scrollTop = 940;
-}
+onMounted(() => {
+  if (scrollDownRef.value) {
+    scrollDownRef.value.addEventListener('click', () => {
+      const nextElement = document.getElementById('top');
+      if (!nextElement) return;
+      const top = nextElement.offsetTop;
+      window.scrollTo({ top, behavior: 'smooth' });
+    });
+  }
+});
 </script>
 
 <style lang="scss" scoped>
-#title-box {
-  width: 100%;
-  height: 30rem;
+.scroll-down {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 2rem;
+  height: 3.5rem;
+  border: 0.1875rem solid #f75652;
+  border-radius: 2rem;
+  cursor: pointer;
 
-  .title {
+  .chevrons {
+    padding: 0.375rem 0 0;
+    margin-left: -0.1875rem;
+    margin-top: 3.5rem;
+    width: 2rem;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     align-items: center;
-    width: 100%;
-    height: 10rem;
-    font-size: 3.5rem;
-    font-weight: 900;
-    color: #020252;
 
-    .title-con {
-      letter-spacing: 0.9rem;
+    .chevron-down {
+      border: solid #f75652;
+      border-width: 0 0.1875rem 0.1875rem 0;
+      display: inline-block;
+      width: 0.625rem;
+      height: 0.625rem;
+      transform: rotate(45deg);
     }
 
-    .scrolldown {
-      position: relative;
-      top: 0;
-      left: 0;
-      width: 2rem;
-      height: 3.5rem;
-      border: 0.1875rem solid #f75652;
-      border-radius: 2rem;
-      margin-top: 4rem;
-      cursor: pointer;
-
-      .chevrons {
-        padding: 0.375rem 0 0;
-        margin-left: -0.1875rem;
-        margin-top: 3.5rem;
-        width: 2rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        .chevrondown {
-          border: solid #f75652;
-          border-width: 0 0.1875rem 0.1875rem 0;
-          display: inline-block;
-          width: 0.625rem;
-          height: 0.625rem;
-          transform: rotate(45deg);
-        }
-
-        .chevrondown:nth-child(odd) {
-          animation: pulse54012 500ms ease infinite alternate;
-        }
-
-        .chevrondown:nth-child(even) {
-          animation: pulse54012 500ms ease infinite alternate 250ms;
-        }
-
-        @keyframes pulse54012 {
-          from {
-            opacity: 0;
-          }
-
-          to {
-            opacity: 0.5;
-          }
-        }
-      }
+    .chevron-down:nth-child(odd) {
+      animation: pulse54012 500ms ease infinite alternate;
     }
 
-    .scrolldown::before {
-      content: '';
-      position: absolute;
-      bottom: 1.875rem;
-      left: 50%;
-      width: 0.375rem;
-      height: 0.375rem;
-      margin-left: -0.1875rem;
-      background-color: #f75652;
-      border-radius: 100%;
-      animation: scrolldown-anim 2s infinite;
-      box-shadow: 0 -0.3125rem 0.1875rem 0.0625rem #2a547066;
+    .chevron-down:nth-child(even) {
+      animation: pulse54012 500ms ease infinite alternate 250ms;
     }
 
-    @keyframes scrolldown-anim {
-      0% {
-        opacity: 0;
-        height: 6px;
-      }
-
-      40% {
-        opacity: 1;
-        height: 10px;
-      }
-
-      80% {
-        transform: translate(0, 20px);
-        height: 0.625rem;
+    @keyframes pulse54012 {
+      from {
         opacity: 0;
       }
 
-      100% {
-        height: 0.8175rem;
-        opacity: 0;
+      to {
+        opacity: 0.5;
       }
     }
   }
+}
 
-  .button {
-    display: flex;
-    margin: 6.25rem auto;
-    border-radius: 12px;
-    overflow: hidden;
+.scroll-down::before {
+  content: '';
+  position: absolute;
+  bottom: 1.875rem;
+  left: 50%;
+  width: 0.375rem;
+  height: 0.375rem;
+  margin-left: -0.1875rem;
+  background-color: #f75652;
+  border-radius: 100%;
+  animation: scroll-down-anim 2s infinite;
+  box-shadow: 0 -0.3125rem 0.1875rem 0.0625rem #2a547066;
+}
 
-    .box {
-      flex: 1;
-      height: 6.25rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 1.875rem;
-      font-weight: 700;
-      color: white;
-      transition: all 0.8s;
-      cursor: pointer;
-      position: relative;
-      background-color: #f75652;
-      overflow: hidden;
-    }
-
-    .box::before {
-      content: '且';
-      position: absolute;
-      top: 0;
-      left: 0;
-      background: #34d0b2;
-      width: 100%;
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      transform: translateY(100%);
-      transition: transform 0.4s;
-    }
-
-    .box:nth-child(2)::before {
-      transform: translateY(-100%);
-      content: '行';
-    }
-
-    .box:nth-child(3)::before {
-      content: '且';
-    }
-
-    .box:nth-child(4)::before {
-      transform: translateY(-100%);
-      content: '看';
-    }
-
-    .box:nth-child(5)::before {
-      content: '且';
-    }
-
-    .box:nth-child(6)::before {
-      transform: translateY(-100%);
-      content: '从';
-    }
-
-    .box:nth-child(7)::before {
-      content: '容';
-    }
-
-    .box:nth-child(8)::before {
-      transform: translateY(-100%);
-      content: ',';
-    }
-
-    .box:nth-child(9)::before {
-      content: '且';
-    }
-
-    .box:nth-child(10)::before {
-      transform: translateY(-100%);
-      content: '听';
-    }
-
-    .box:nth-child(11)::before {
-      content: '且';
-    }
-
-    .box:nth-child(12)::before {
-      transform: translateY(-100%);
-      content: '忘';
-    }
-
-    .box:nth-child(13)::before {
-      content: '且';
-    }
-
-    .box:nth-child(14)::before {
-      transform: translateY(-100%);
-      content: '随';
-    }
-
-    .box:nth-child(15)::before {
-      content: '风';
-    }
+@keyframes scroll-down-anim {
+  0% {
+    opacity: 0;
+    height: 6px;
   }
 
-  .button:hover .box::before {
-    transform: translateY(0);
+  40% {
+    opacity: 1;
+    height: 10px;
+  }
+
+  80% {
+    transform: translate(0, 20px);
+    height: 0.625rem;
+    opacity: 0;
+  }
+
+  100% {
+    height: 0.8175rem;
+    opacity: 0;
   }
 }
 </style>
