@@ -5,12 +5,12 @@
   >
     <img
       :src="image"
-      class="rounded-xl object-cover w-full h-[192px] overflow-hidden"
+      class="rounded-xl object-cover xl:w-[200px] w-full h-[200px] overflow-hidden"
       alt=""
     />
     <div class="flex-1">
       <h3
-        class="text-2xl mt-4 lg:mt-0 break-words text-gray-800 text-ellipsis line-clamp-1 font-bold mb-2"
+        class="text-2xl mt-4 xl:mt-0 break-words text-gray-800 text-ellipsis line-clamp-1 font-bold mb-2"
       >
         {{ title }}
       </h3>
