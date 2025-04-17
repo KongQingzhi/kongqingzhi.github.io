@@ -1,5 +1,5 @@
 <template>
-  <div class="lg:w-96 space-y-4 bg-white rounded-xl p-6">
+  <div v-show-scroll-up class="lg:w-96 space-y-4 bg-white rounded-xl p-6">
     <img
       :src="item.img"
       class="rounded-xl object-cover w-full md:h-56 overflow-hidden"

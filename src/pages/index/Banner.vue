@@ -1,14 +1,13 @@
 <template>
   <section class="lg:grid grid-cols-2 py-10 gap-10">
     <div
+      v-show-scroll-up
       class="relative lg:mt-16 sm:mt-20 mt-6 mx-auto lg:size-[452px] sm:size-[560px] size-[335px]"
     >
-      <div
-        class="bg-primary relative rounded-full sm:size-[400px] size-64"
-      ></div>
+      <div class="bg-primary relative rounded-full sm:size-[400px] size-64" />
       <div
         class="bg-white rounded-full lg:size-64 sm:size-80 size-48 relative sm:-top-[450px] -top-72 lg:left-48 sm:left-60 left-36"
-      ></div>
+      />
       <img class="absolute left-0 top-0" :src="banner" alt="" />
     </div>
     <div class="space-y-5 md:space-y-10 2xl:space-y-16">

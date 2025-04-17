@@ -1,6 +1,7 @@
 <template>
   <div
-    class="bg-white cursor-pointer xl:flex justify-between items-center gap-4 flex-wrap p-6 rounded-lg"
+    v-show-scroll-up
+    class="bg-white cursor-pointer xl:flex justify-between items-center gap-4 flex-wrap p-6 rounded-xl"
     @click="handleGo"
   >
     <img
@@ -32,6 +33,7 @@
 
 <script setup lang="ts">
 import { useRouter } from 'vue-router';
+
 const props = defineProps<{
   date: string;
   describe: string;
