@@ -41,15 +41,7 @@ export default defineConfig({
       },
     },
   },
-  plugins: [
-    vue(),
-    visualizer({ open: false }),
-    ViteCompressionPlugin({
-      algorithm: 'brotliCompress',
-      ext: '.br',
-      deleteOriginFile: true,
-    }),
-  ],
+  plugins: [vue(), visualizer({ open: false }), ViteCompressionPlugin()],
   resolve: {
     alias: {
       '@': path.resolve(__dirname, 'src'),
