@@ -20,7 +20,7 @@
 
         <div class="mt-4">
           <p>未经允许,不可复制,所有解释权归创始团队</p>
-          <p class="mt-4">
+          <p class="mt-1">
             Date:2022/07/28 address:Guizhou Normal College, 115 Wudang District,
             Guiyang City, Guizhou Province
           </p>

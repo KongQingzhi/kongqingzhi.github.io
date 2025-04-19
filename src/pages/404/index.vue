@@ -1,16 +1,16 @@
 <template>
-  <main class="relative main mx-auto isolate min-h-full">
+  <main class="relative mx-auto min-h-[77vh] isolate">
     <img
       src="./404.jpg"
       alt=""
       class="absolute inset-0 -z-10 size-full object-cover object-left"
     />
-    <div class="mx-auto max-w-7xl px-6 py-32 text-center sm:py-40 lg:px-8">
+    <div class="mx-auto max-w-7xl px-6 py-40 text-center lg:px-8">
       <p class="text-8xl font-semibold text-white">404</p>
       <h1
-        class="mt-16 text-balance text-5xl font-semibold tracking-tight text-white sm:text-7xl"
+        class="mt-16 text-balance text-5xl font-semibold tracking-tight text-white sm:text-6xl"
       >
-        Page not found
+        页面走丢了...
       </h1>
       <p
         class="mt-6 text-pretty text-lg font-medium text-white/70 sm:text-xl/8"
@@ -20,12 +20,12 @@
       <div class="mt-10 flex items-center text-white justify-center gap-x-6">
         <a
           href="/"
-          class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-          >Go back home</a
+          class="rounded-md bg-primary px-3.5 py-2.5 text-sm font-semibold shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+          >返回首页</a
         >
-        <a href="#" class="text-sm font-semibold"
-          >Contact support <span aria-hidden="true">&rarr;</span></a
-        >
+        <RouterLink to="/about" class="text-sm font-semibold"
+          >联系我 <span aria-hidden="true">&rarr;</span>
+        </RouterLink>
       </div>
     </div>
   </main>
@@ -35,9 +35,3 @@
 import { defineOptions } from 'vue';
 defineOptions({ name: 'NotFoundPage' });
 </script>
-
-<style scoped>
-.main {
-  min-height: calc(100vh - 4rem);
-}
-</style>
