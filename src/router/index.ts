@@ -1,5 +1,8 @@
 import { createWebHashHistory, createRouter } from 'vue-router';
-const routes = [
+import type { RouteRecordRaw } from 'vue-router';
+import articleDetailRoutes from './articleDetailRoutes';
+
+const routes: RouteRecordRaw[] = [
   {
     name: 'index',
     component: () => import('@/pages/index/index.vue'),
@@ -14,6 +17,11 @@ const routes = [
     component: () => import('@/pages/article/index.vue'),
     name: 'article',
     path: '/article',
+  },
+  {
+    children: articleDetailRoutes,
+    name: 'detail',
+    path: '/detail',
   },
   {
     component: () => import('@/pages/about/index.vue'),
