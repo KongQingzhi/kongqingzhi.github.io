@@ -23,3 +23,11 @@
 
 @tailwind components;
 @tailwind utilities;
+
+.markdown-body {
+  @apply bg-transparent;
+}
+
+.markdown-body pre {
+  @apply bg-white;
+}

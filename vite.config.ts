@@ -4,6 +4,8 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import { visualizer } from 'rollup-plugin-visualizer';
 import ViteCompressionPlugin from 'vite-plugin-compression';
+import Markdown from 'vite-plugin-md';
+import hljs from 'highlight.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -41,7 +43,28 @@ export default defineConfig({
       },
     },
   },
-  plugins: [vue(), visualizer({ open: false }), ViteCompressionPlugin()],
+
+  plugins: [
+    vue({ include: [/\.vue$/, /\.md$/] }),
+    visualizer({ open: false }),
+    Markdown({
+      markdownItSetup(md) {
+        md.set({
+          highlight: (str, lang) => {
+            if (lang && hljs.getLanguage(lang)) {
+              try {
+                return `<pre class="hljs"><code>${hljs.highlight(str, { language: lang }).value}</code></pre>`;
+              } catch (error) {
+                return error;
+              }
+            }
+            return `<pre class="hljs"><code>${md.utils.escapeHtml(str)}</code></pre>`;
+          },
+        });
+      },
+    }),
+    ViteCompressionPlugin(),
+  ],
   resolve: {
     alias: {
       '@': path.resolve(__dirname, 'src'),
