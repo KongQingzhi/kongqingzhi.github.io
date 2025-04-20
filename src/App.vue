@@ -1,6 +1,8 @@
 <template>
   <Nav class="fixed z-[9999] w-full top-0" />
-  <main class="container tracking-wider pt-16 mx-auto px-4 sm:px-10">
+  <main
+    class="container min-h-[80vh] tracking-wider pt-16 mx-auto px-4 sm:px-10"
+  >
     <RouterView />
   </main>
   <Foot />
