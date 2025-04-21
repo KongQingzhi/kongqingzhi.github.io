@@ -40,19 +40,19 @@ Iconfont 是一个非常实用的工具，尤其适合前端开发人员和设�
 
 选择所需要的图标，点击添加入库。
 
-![img](image-1.png)
+![img](./image-1.png)
 
 选择完成后，点击导航栏的购物车图片，点击添加至项目。选择要添加的项目，点击确定按钮，自动导航到资源管理页面，在这里可以看到你添加的图标。
 
-![img](image-2.png)
+![img](./image-2.png)
 
-![img](image-3.png)
+![img](./image-3.png)
 
-![img](image-4.png)
+![img](./image-4.png)
 
 点击下载至本地按钮，下载图标文件并解压。其中，`demo.css` 和 `demo_index.html` 文件是官方生成的示例文件，向你介绍如何使用字体图标。在导入资源文件时可以忽略这两个文件。
 
-![img](image-5.png)
+![img](./image-5.png)
 
 ## 使用
 
@@ -86,7 +86,7 @@ import '@/assets/iconfont/iconfont.css';
 
 3. 挑选相应图标并获取字体编码，应用于页面
 
-![img](image-6.png)
+![img](./image-6.png)
 
 ```html
 <span class="iconfont">&#xe8d6;</span>
@@ -119,7 +119,7 @@ import '@/assets/iconfont/iconfont.css';
 
 3. 挑选相应图标并获取字体编码，应用于页面
 
-![img](image-7.png)
+![img](./image-7.png)
 
 ```html
 <span class="iconfont icon-aixin"></span>
@@ -152,9 +152,9 @@ import '@/assets/iconfont/iconfont.css';
 
 点击查看在线链接按钮，复制链接，在 `index.html` 文件中引入 Iconfont 的 JS 文件：
 
-![img](image-8.png)
+![img](./image-8.png)
 
-![img](image-9.png)
+![img](./image-9.png)
 
 ```html
 <script src="//at.alicdn.com/t/c/font_4740592_6l8fv4yxg16.js"></script>
@@ -185,7 +185,7 @@ import '@/assets/iconfont/iconfont.css';
 
 3. 挑选相应图标并获取类名，应用于页面。
 
-![img](image-7.png)
+![img](./image-7.png)
 
 ```html
 <svg class="icon" aria-hidden="true">
@@ -204,7 +204,7 @@ import '@/assets/iconfont/iconfont.css';
 >
 > 点击批量操作按钮，全选图标，然后点击去色按钮，即可全部去色。
 
-![img](image-8.png)
+![img](./image-8.png)
 
 ## 更新图标
 
@@ -218,13 +218,13 @@ import '@/assets/iconfont/iconfont.css';
 
 当我们需要更新图标库时，需要资源管理，点击查看在线链接。
 
-![img](image-10.png)
+![img](./image-10.png)
 
 - 引用本地 js
 
 访问生成的链接，将页面代码替换到本地的 `iconfont.js` 文件的代码即可。
 
-![img](image-11.png)
+![img](./image-11.png)
 
 - 引用在线 js
 
