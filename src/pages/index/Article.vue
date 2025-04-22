@@ -38,7 +38,7 @@ const articleList = [
     image: new URL('@/assets/index/project-format.png', import.meta.url).href,
     tag: ['eslint', 'prettier'],
     title: '前端项目工程规范',
-    url: '',
+    url: '/detail/front-end-engineering',
   },
   {
     date: '2025-03-14',
@@ -48,7 +48,7 @@ const articleList = [
       .href,
     tag: ['html', 'css'],
     title: 'CSS 三栏布局完全指南',
-    url: '',
+    url: '/detail/three-column-layout',
   },
   {
     date: '2025-03-14',
@@ -58,7 +58,7 @@ const articleList = [
       .href,
     tag: ['vue'],
     title: '如何在 Vue 项目中使用阿里巴巴图标库并封装成组件',
-    url: '',
+    url: '/detail/vue-use-alibaba-icon',
   },
   {
     date: '2025-03-14',
@@ -70,7 +70,7 @@ const articleList = [
     ).href,
     tag: ['VitePress ', 'Tailwind CSS'],
     title: 'VitePress 中集成 Tailwind CSS',
-    url: '',
+    url: '/detail/vitepress-integrate-tailwind-css',
   },
 ];
 
